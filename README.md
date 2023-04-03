@@ -1,3 +1,1 @@
 # Projektigrupor
-sjshxysnasXNQE
-SQJWUDNWI
