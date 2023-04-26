@@ -1,379 +1,135 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>fitness and gym website design</title>
-
-    <!-- font awesome cdn link  -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-
-    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
-
-    <!-- custom css file link  -->
-    <link rel="stylesheet" href="css/style.css">
-
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>PersonalTrainer</title>
 </head>
-
 <body>
-
-    <!-- header section       -->
-
-    <header class="header">
-
-        <a href="#" class="logo"> <span>ORIGIN</span>FITNESS </a>
-
-        <div id="menu-btn" class="fas fa-bars"></div>
-
-        <nav class="navbar">
-            <a href="#home">home</a>
-            <a href="#about">about</a>
-            <a href="#features">features</a>
-            <a href="#pricing">pricing</a>
-            <a href="#trainers">trainers</a>
-        </nav>
-
-    </header>
-
-
-
-    <!-- hero section   -->
-
-    <section class="home" id="home">
-
-        <div class="swiper home-slider">
-
-            <div class="swiper-wrapper">
-
-                <div class="swiper-slide slide" style="background: url(images/home-bg-2.jpg) no-repeat;">
-                    <div class="content">
-                        <span>be strong, be fit</span>
-                        <h3>Reach your Great Goal At Origin Fitness.</h3>
-                        <a href="#" class="btn">get started</a>
-                    </div>
-                </div>
-
-                <div class="swiper-slide slide" style="background: url(images/home-bg-1.jpg) no-repeat;">
-                    <div class="content">
-                        <span>be strong, be fit</span>
-                        <h3>Get Fit and Strong with Origin Fitness.</h3>
-                        <a href="#" class="btn">get started</a>
-                    </div>
-                </div>
-
-                <div class="swiper-slide slide" style="background: url(images/home-bg-3.jpg) no-repeat;">
-                    <div class="content">
-                        <span>be strong, be fit</span>
-                        <h3>Make yourself stronger than your excuses.</h3>
-                        <a href="#" class="btn">get started</a>
-                    </div>
-                </div>
-
+    <div>
+        <!-- Navbar -->
+        <div class="top text-white black">
+            <div class="wbar  ">
+              <a class="bar-item button padding-large hide-medium hide-large right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+              <a href="#home" class="bar-item button padding-large">HOME</a>
+              <a href="#about" class="bar-item button padding-large hide-small">ABOUT</a>
+              <a href="#service" class="bar-item button padding-large hide-small">SERVICE</a>
+              <a href="#contact" class="bar-item button padding-large hide-small">CONTACT</a>
             </div>
-
-            <div class="swiper-pagination"></div>
-
+          </div>
+  
+          <!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
+          <div id="navDemo" class="bar-block black hide hide-large hide-medium top" style="margin-top:46px">
+            <a href="#about" class="wbar-item w3-button padding-large" onclick="myFunction()">ABOUT</a>
+            <a href="#service" class="bar-item w3-button padding-large" onclick="myFunction()">SERVICE</a>
+            <a href="#contact" class="bar-item button wpadding-large" onclick="myFunction()">CONTACT</a>
+          </div>
+    </div>
+    <section id="home">
+        <div class="hero">
+         <div class="hero-text">
+          <h1>Move Your Body,<br>
+             Shape Your Future</h1>      
+         </div>
+        
         </div>
-
     </section>
+    <main>
+      <div class="about" id="about">
+        <div>
+        <h2 class="title">
+               Get to Know me
+        </h2>
+        <div class="about-main">
+          <div>
 
- 
-
-    <!-- about section  -->
-
-    <section class="about" id="about">
-
-        <div class="image">
-            <img src="images/about-img.jpg" alt="">
-        </div>
-
-        <div class="content">
-            <span>about us</span>
-            <h3 class="title">Every day is a chance to become better</h3>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione quia accusamus dicta inventore nobis
-                obcaecati vero odio, id dolorum. Consequatur ex, aperiam deserunt nostrum perferendis illum unde ipsa?
-                Consequatur, distinctio?</p>
-            <div class="box-container">
-                <div class="box">
-                    <h3><i class="fas fa-check"></i>body and mind</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, enim.</p>
-                </div>
-                <div class="box">
-                    <h3><i class="fas fa-check"></i>healthy life</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, enim.</p>
-                </div>
-                <div class="box">
-                    <h3><i class="fas fa-check"></i>strategies</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, enim.</p>
-                </div>
-                <div class="box">
-                    <h3><i class="fas fa-check"></i>workout</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, enim.</p>
-                </div>
-            </div>
-            <a href="#" class="btn">read more</a>
-        </div>
-
-    </section>
-
-
-
-    <!-- features section  -->
-
-    <section class="features" id="features">
-
-        <h1 class="heading"> <span>gym features</span> </h1>
-
-        <div class="box-container">
-
-            <div class="box">
-                <div class="image">
-                    <img src="images/f-img-1.jpg" alt="">
-                </div>
-                <div class="content">
-                    <img src="images/icon-1.png" alt="">
-                    <h3>body building</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, atque.</p>
-                    <a href="#" class="btn">read more</a>
-                </div>
-            </div>
-
-            <div class="box second">
-                <div class="image">
-                    <img src="images/f-img-2.jpg" alt="">
-                </div>
-                <div class="content">
-                    <img src="images/icon-2.png" alt="">
-                    <h3>gym for men</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, atque.</p>
-                    <a href="#" class="btn">read more</a>
-                </div>
-            </div>
-
-            <div class="box">
-                <div class="image">
-                    <img src="images/f-img-3.jpg" alt="">
-                </div>
-                <div class="content">
-                    <img src="images/icon-3.png" alt="">
-                    <h3>gym for women</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, atque.</p>
-                    <a href="#" class="btn">read more</a>
-                </div>
-            </div>
+          </div>
+          <div class="about-text">
+             <h3>I'm Paula <br>Personal Trainer </h3>
+             <p >Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+             tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+             quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+             consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+             cillum dolore eu fugiat nulla pariatur.</p>
+             <div style="margin-top:40px">
+              <span class="text-white social" >
+                <p >Follow Me on Social media</p>
+                <div class="margin-top">
+             <a href="#">  <i class="fa fa-facebook-official hover-opacity icons" ></i></a> 
+             <a href="#"><i class="fa fa-instagram hover-opacity icons" ></i></a> 
+             <a href="#"><i class="fa fa-snapchat hover-opacity icons"></i></a>  
+             <a href="#"><i class="fa fa-pinterest-p hover-opacity icons" ></i></a>  
+             <a href="#"><i class="fa fa-twitter hover-opacity icons"></i></a>  
+             <a href="#"><i class="fa fa-linkedin hover-opacity icons"></i></a>  
+             </div>
+              </span>
+             </div>
+            
+          </div>
 
         </div>
-
-    </section>
-
- 
-    <!-- pricing section  -->
-
-    <section class="pricing" id="pricing">
-
-        <div class="information">
-            <span>pricing plan</span>
-            <h3>affordable pricing plan for your</h3>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam dolore excepturi ea suscipit fugiat cum
-                quae, rerum optio mollitia! Tempora?</p>
-            <p> <i class="fas fa-check"></i> cardio exercise </p>
-            <p> <i class="fas fa-check"></i> weight lifting </p>
-            <p> <i class="fas fa-check"></i> diet plans </p>
-            <p> <i class="fas fa-check"></i> overall results </p>
-            <a href="#" class="btn">all pricing</a>
         </div>
 
-        <div class="plan basic">
-            <h3>basic plan</h3>
-            <div class="price"><span>$</span>30<span>/mo</span></div>
-            <div class="list">
-                <p> <i class="fas fa-check"></i> personal training </p>
-                <p> <i class="fas fa-check"></i> cardio exercise </p>
-                <p> <i class="fas fa-check"></i> weight lifting </p>
-                <p> <i class="fas fa-check"></i> diet plans </p>
-                <p> <i class="fas fa-check"></i> overall results </p>
+      </div>
+      <div class="service" id="service">
+         <h2 class="title"> __Service</h2>
+
+         <div class="card">
+           <div class="card-list">
+              <div class="card-image">
+                <img src="file:///C:/Users/Pc/Desktop/process%201/img/body%20lifting.webp">
+              </div>
+              <div class="card-text"> 
+                <h4>Weight Lifting</h4>
+                <p>$20/Month</p>
+                <a href="#join">
+                  <button class="btn red margin-top round" style="width:100%">Join</button>
+                </a>
+
+              </div>
+           </div>
+           <div class="card-list">
+            <div class="card-image">
+              <img src="file:///C:/Users/Pc/Desktop/process%201/img/functional-training.webp">
             </div>
-            <a href="#" class="btn">get started</a>
-        </div>
-
-        <div class="plan">
-            <h3>premium plan</h3>
-            <div class="price"><span>$</span>90<span>/mo</span></div>
-            <div class="list">
-                <p> <i class="fas fa-check"></i> personal training </p>
-                <p> <i class="fas fa-check"></i> cardio exercise </p>
-                <p> <i class="fas fa-check"></i> weight lifting </p>
-                <p> <i class="fas fa-check"></i> diet plans </p>
-                <p> <i class="fas fa-check"></i> overall results </p>
-            </div>
-            <a href="#" class="btn">get started</a>
-        </div>
-
-    </section>
-
-
-
-    <!-- trainers section   -->
-
-    <section class="trainers" id="trainers">
-
-        <h1 class="heading"> <span>expert trainers</span> </h1>
-
-        <div class="box-container">
-
-            <div class="box">
-                <img src="images/trainer-1.jpg" alt="">
-                <div class="content">
-                    <span>expert trainer</span>
-                    <h3>john deo</h3>
-                    <div class="share">
-                        <a href="#" class="fab fa-facebook-f"></a>
-                        <a href="#" class="fab fa-twitter"></a>
-                        <a href="#" class="fab fa-pinterest"></a>
-                        <a href="#" class="fab fa-linkedin"></a>
-                    </div>
-                </div>
+            <div class="card-text"> 
+              <h4>Bodybuilding</h4>
+              <p>$10/Month</p>
+              <a href="#join">
+                <button class="btn red margin-top round" style="width:100%">Join</button>
+              </a>
             </div>
 
-            <div class="box">
-                <img src="images/trainer-2.jpg" alt="">
-                <div class="content">
-                    <span>expert trainer</span>
-                    <h3>john deo</h3>
-                    <div class="share">
-                        <a href="#" class="fab fa-facebook-f"></a>
-                        <a href="#" class="fab fa-twitter"></a>
-                        <a href="#" class="fab fa-pinterest"></a>
-                        <a href="#" class="fab fa-linkedin"></a>
-                    </div>
-                </div>
-            </div>
+           </div>
+           <div class="card-list"><div class="card-image">
+            <img src="file:///C:/Users/Pc/Desktop/process%201/img/AKTIV-ESSENTIALS-Header-image-2-1080x675.jpg">
+          </div>
+          <div class="card-text"> 
+            <h4>Functional Fitness</h4>
+            <p>$40/Month</p>
+            <a href="#join">
+              <button class="btn red margin-top round" style="width:100%">Join</button>
+            </a>
 
-            <div class="box">
-                <img src="images/trainer-3.jpg" alt="">
-                <div class="content">
-                    <span>expert trainer</span>
-                    <h3>john deo</h3>
-                    <div class="share">
-                        <a href="#" class="fab fa-facebook-f"></a>
-                        <a href="#" class="fab fa-twitter"></a>
-                        <a href="#" class="fab fa-pinterest"></a>
-                        <a href="#" class="fab fa-linkedin"></a>
-                    </div>
-                </div>
-            </div>
+          </div>
 
-            <div class="box">
-                <img src="images/trainer-4.jpg" alt="">
-                <div class="content">
-                    <span>expert trainer</span>
-                    <h3>john deo</h3>
-                    <div class="share">
-                        <a href="#" class="fab fa-facebook-f"></a>
-                        <a href="#" class="fab fa-twitter"></a>
-                        <a href="#" class="fab fa-pinterest"></a>
-                        <a href="#" class="fab fa-linkedin"></a>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-
-    </section>
-
-
-
-    <!-- banner section  -->
-
-    <section class="banner">
-
-        <span>join us now</span>
-        <h3>get upto 50% discount</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat architecto nesciunt aut sapiente quis
-            inventore quam vitae quod illum incidunt.</p>
-        <a href="#" class="btn">get discount</a>
-
-    </section>
-
-
-
-
-
-    <!-- footer section  -->
-
-    <section class="footer">
-
-        <div class="box-container">
-
-            <div class="box">
-                <h3>quick links</h3>
-                <a class="links" href="#home">home</a>
-                <a class="links" href="#about">about</a>
-                <a class="links" href="#features">features</a>
-                <a class="links" href="#pricing">pricing</a>
-                <a class="links" href="#trainers">trainers</a>
-                <a class="links" href="#blogs">blogs</a>
-            </div>
-
-            <div class="box">
-                <h3>opening hours</h3>
-                <p> monday : <i> 7:00am - 10:30pm </i> </p>
-                <p> tuesday : <i> 7:00am - 10:30pm </i> </p>
-                <p> wednesday : <i> 7:00am - 10:30pm </i> </p>
-                <p> friday : <i> 7:00am - 10:30pm </i> </p>
-                <p> saturday : <i> 7:00am - 10:30pm </i> </p>
-                <p> sunday : <i> closed </i> </p>
-            </div>
-
-            <div class="box">
-                <h3>contacts</h3>
-                <p> <i class="fas fa-phone"></i> +123-543-087 </p>
-                <p> <i class="fas fa-phone"></i> +455-654-124 </p>
-                <p> <i class="fas fa-envelope"></i> originfitness@gmail.com </p>
-                <div class="share">
-                    <a href="#" class="fab fa-facebook-f"></a>
-                    <a href="#" class="fab fa-twitter"></a>
-                    <a href="#" class="fab fa-linkedin"></a>
-                    <a href="#" class="fab fa-pinterest"></a>
-                </div>
-            </div>
-
-            <div class="box">
-                <h3>newsletter</h3>
-                <p>subscribe for latest updates</p>
-                <form action="">
-                    <input type="email" name="" class="email" placeholder="enter your email" id="">
-                    <input type="submit" value="subscribe" class="btn">
-                </form>
-            </div>
-
-        </div>
-
-    </section>
-
-    <div class="credit">&copy; 2022 created by <span>erblin berisha / ali aliu /drilon zeqiri</span> | all rights reserved! </div>
-
- 
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
-
-    <!-- custom js file link  -->
-    <script src="js/script.js"></script>
+           </div>
+         </div>
+      </div>
+          <script>
+      function myFunction() {
+        var x = document.getElementById("navDemo");
+        if (x.className.indexOf("show") == -1) {
+          x.className += "show";
+        } else { 
+          x.className = x.className.replace(" show", "");
+        }
+      }
+    </script>
 
 </body>
-
 </html>
